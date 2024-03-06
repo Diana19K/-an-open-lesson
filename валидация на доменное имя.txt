@@ -1,0 +1,13 @@
+if (!empty($email)) {
+    if(preg_match("/[a-z0-9]{1,}@/i",$email)){
+        if(preg_match('/\.(ru|com)$/', $email)){
+            $query_sub = " INSERT INTO `subscription` (`email`) values '$email'";
+            $query_result  = mysqli_query($con,$query_sub);
+            $check = 1;
+        }else{
+            $check = 2;
+        }
+    }else{
+        $check = 2;
+    }
+}
