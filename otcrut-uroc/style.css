@@ -155,7 +155,6 @@ span{
     border-color: rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     border-radius: 6px;
-    cursor: pointer;
 }
 .red-home{
     width: 362px;
@@ -174,6 +173,7 @@ span{
     align-items: center;
     text-align: center;
     gap: 10px;
+
 }
 .buy-home{
     width: 362px;
@@ -183,6 +183,7 @@ span{
     align-items: center;
     text-align: center;
     gap: 10px;
+
 }
 .name-see{
     text-align: center;
@@ -193,6 +194,7 @@ span{
     font-family: "Nunito", sans-serif;
     font-size: 30px;
 }
+
 main{
     margin-top: 10%;
     display: flex;
@@ -381,4 +383,10 @@ form{
 }
 .main-footer{
 height: 300px;
+}
+.check_false{
+    color: red;
+}
+.check_true{
+    color: green;
 }

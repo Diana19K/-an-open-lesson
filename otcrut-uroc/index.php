@@ -1,11 +1,4 @@
-<?php
-$new = isset ($_GET ["new"])?$_GET["new"]:false;
-$result = "";
-// if($new){
-//     $result = ($new != 123 )?"Успех"| "Ошибка";
-// } 
-// else $new = false;
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,51 +85,48 @@ $result = "";
 
 
 
-    <div class="explore-popular">
-        <h2 class="name-seamlessly">Explore the popular residences</h2>
-        <p class="text-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id risus vulputate tortor, risus ut Viverra viverra aliquam, semper duis a aliquam.</p>
-        <div class="bloc-img-explore">
-            <div class="meadow-wiew">
-            <img src="image\Group 2339 (1).png" alt="">
-                <div class="block-meadow-view">
-                    <h3 class="text-meadow">Meadow view</h3>
-                    <hr class= "hr-text-meadow">
-                    <p>$570.00 | New</p>
-                    <p class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
-                </div>
-            </div>
-            <div class="meadow-wiew">
-            <img src="image\Group 2339 (1).png" alt="">
+<div class="explore-popular">
+    <h2 class="name-seamlessly">Explore the popular residences</h2>
+    <p class="text-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id risus vulputate tortor, risus ut Viverra viverra aliquam, semper duis a aliquam.</p>
+    <div class="bloc-img-explore">
+        <div class="meadow-wiew">
+        <img src="image\Group 2339 (1).png" alt="">
             <div class="block-meadow-view">
-                    <h3 class="text-meadow">Orchard House</h3>
-                    <hr class= "hr-text-meadow">
-                    <p>$570.00 | New</p>
-                    <p  class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
-                </div>
+                <h3 class="text-meadow">Meadow view</h3>
+                <hr class= "hr-text-meadow">
+                <p>$570.00 | New</p>
+                <p class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
             </div>
-            <div class="meadow-wiew">
-            <img src="image\Group 2339 (1).png" alt="">
-            <div class="block-meadow-view">
-                    <h3 class="text-meadow">School House</h3>
-                    <hr class= "hr-text-meadow">
-                    <p>$570.00 | New</p>
-                    <p  class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
-                </div>
+        </div>
+        <div class="meadow-wiew">
+        <img src="image\Group 2339 (1).png" alt="">
+        <div class="block-meadow-view">
+                <h3 class="text-meadow">Orchard House</h3>
+                <hr class= "hr-text-meadow">
+                <p>$570.00 | New</p>
+                <p  class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
+            </div>
+        </div>
+        <div class="meadow-wiew">
+        <img src="image\Group 2339 (1).png" alt="">
+        <div class="block-meadow-view">
+                <h3 class="text-meadow">School House</h3>
+                <hr class= "hr-text-meadow">
+                <p>$570.00 | New</p>
+                <p  class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
             </div>
         </div>
     </div>
-</main>
 </div>
-<!-- форма -->
+    </main>
+    
+    </div>
 <div class="email-form">
     <div class ="subs">
         <h2 class=" name-upgrate" >Upgrade your home today?</h2>
         <p class="text-loream-ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id risus vulputate tortor, risus ut
             Viverra viverra aliquam, semper duis a aliquam.</h3>
-        <form  action="new" method = "POST" id="new" >
-            <input  class="input_email" type="email" placeholder="Enter your email..." name="email">
-            <input class="input_submit" type="submit" value="Continue">
-        </form>
+    <?php require "form.php";?>
     </div>
 </div>
 <footer>
