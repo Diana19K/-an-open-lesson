@@ -1,4 +1,11 @@
-
+<?php
+$new = isset ($_GET ["new"])?$_GET["new"]:false;
+$result = "";
+// if($new){
+//     $result = ($new != 123 )?"Успех"| "Ошибка";
+// } 
+// else $new = false;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,51 +92,102 @@
 
 
 
-<div class="explore-popular">
-    <h2 class="name-seamlessly">Explore the popular residences</h2>
-    <p class="text-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id risus vulputate tortor, risus ut Viverra viverra aliquam, semper duis a aliquam.</p>
-    <div class="bloc-img-explore">
-        <div class="meadow-wiew">
-        <img src="image\Group 2339 (1).png" alt="">
+    <div class="explore-popular">
+        <h2 class="name-seamlessly">Explore the popular residences</h2>
+        <p class="text-lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id risus vulputate tortor, risus ut Viverra viverra aliquam, semper duis a aliquam.</p>
+        <div class="bloc-img-explore">
+            <div class="meadow-wiew">
+            <img src="image\Group 2339 (1).png" alt="">
+                <div class="block-meadow-view">
+                    <h3 class="text-meadow">Meadow view</h3>
+                    <hr class= "hr-text-meadow">
+                    <p>$570.00 | New</p>
+                    <p class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
+                </div>
+            </div>
+            <div class="meadow-wiew">
+            <img src="image\Group 2339 (1).png" alt="">
             <div class="block-meadow-view">
-                <h3 class="text-meadow">Meadow view</h3>
-                <hr class= "hr-text-meadow">
-                <p>$570.00 | New</p>
-                <p class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
+                    <h3 class="text-meadow">Orchard House</h3>
+                    <hr class= "hr-text-meadow">
+                    <p>$570.00 | New</p>
+                    <p  class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
+                </div>
             </div>
-        </div>
-        <div class="meadow-wiew">
-        <img src="image\Group 2339 (1).png" alt="">
-        <div class="block-meadow-view">
-                <h3 class="text-meadow">Orchard House</h3>
-                <hr class= "hr-text-meadow">
-                <p>$570.00 | New</p>
-                <p  class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
-            </div>
-        </div>
-        <div class="meadow-wiew">
-        <img src="image\Group 2339 (1).png" alt="">
-        <div class="block-meadow-view">
-                <h3 class="text-meadow">School House</h3>
-                <hr class= "hr-text-meadow">
-                <p>$570.00 | New</p>
-                <p  class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
+            <div class="meadow-wiew">
+            <img src="image\Group 2339 (1).png" alt="">
+            <div class="block-meadow-view">
+                    <h3 class="text-meadow">School House</h3>
+                    <hr class= "hr-text-meadow">
+                    <p>$570.00 | New</p>
+                    <p  class="bath-text">3 Bads |  3 Baths  |  2,532 Sq.Ft</p>
+                </div>
             </div>
         </div>
     </div>
+</main>
 </div>
-    </main>
-    
-    </div>
-
+<!-- форма -->
+<div class="email-form">
     <div class ="subs">
         <h2 class=" name-upgrate" >Upgrade your home today?</h2>
         <p class="text-loream-ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id risus vulputate tortor, risus ut
             Viverra viverra aliquam, semper duis a aliquam.</h3>
-        <form  action="new.php" method = "POST">
+        <form  action="new" method = "POST" id="new" >
             <input  class="input_email" type="email" placeholder="Enter your email..." name="email">
             <input class="input_submit" type="submit" value="Continue">
         </form>
     </div>
+</div>
+<footer>
+    <div class="main-footer">
+        <div class="nav-footer">
+            <div class="logo-footer">
+            <p>LOGO</p>
+            <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id risus vulputate.</p>
+        </div>
+            <div class="company">
+                <h2>Company</h2>
+                <a href="#">Crypto widgets</a>
+                <a href="#">Crypto currency</a>
+                <a href="#">Bitcoin guid </a>
+                <a href="#">contact us</a>
+                <a href="#">contact us</a>
+            </div>
+            <div class="company">
+                <h2>Navigate</h2>
+                <a href="#">Roadmap</a>
+                <a href="#">video</a>
+                <a href="#">Team</a>
+                <a href="#">C oin disttibution</a>
+                <a href="#">Media</a>
+            </div>
+            <div class="company">
+                <h2>products</h2>
+                <a href="#">Hardware</a>
+                <a href="#">Mining</a>
+                <a href="#">Terade calls </a>
+                <a href="#">Software</a>
+                <a href="#">media</a>
+            </div>
+            <div class="company">
+                <h2>contact us</h2>
+                <a href="#">Mailing address</a>
+                <a href="#">Suite 1100</a>
+                <a href="#">0197876236</a>
+                <a href="#">gmail</a>
+            </div>
+        </div>
+    </div>
+        <div class="inform">
+            <div class="info">
+                <p>Copyright © 2021 Brandoxide. All rights reserved.</p>
+            </div>
+            <div class="in">
+                <p>Terms & Agreements</p>
+                <p>Privecy Policy</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
